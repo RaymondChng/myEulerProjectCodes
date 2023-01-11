@@ -4,13 +4,13 @@
 
 
 def IsMultipleOfThreeOrFive(num):
-    if num%3==0 and num%5==0:
+    if num % 3 == 0 and num % 5 == 0:
         return num
 
     elif num % 3 == 0:
         return num
 
-    elif num % 5==0:
+    elif num % 5 == 0:
         return num
     else:
         return 0
