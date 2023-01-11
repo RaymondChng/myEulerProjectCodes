@@ -7,7 +7,6 @@ def IsMultipleOfThreeOrFive(num):
         return num
     elif num % 3 == 0:
         return num
-
     elif num % 5 == 0:
         return num
     else:
