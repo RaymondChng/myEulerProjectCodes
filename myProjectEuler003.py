@@ -7,9 +7,9 @@ def ReturnLargestFactor(n):
     while True:
         p = ReturnNextSmallestFactor(n) 
         if p < n:
-            n = n // p  # Removes the current smallest prime factor
+            n = n // p      # Divides by the current smallest prime factor
         else:
-            return n    
+            return n        # When the current smallest prime factor is the only prime factor remaining
 
 def ReturnNextSmallestFactor(n):
     for i in range(2, n):   # Begin with the smallest prime factor which is 2
