@@ -3,11 +3,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 def ReturnMultiple_of_3_or_5(num):
-    if num % 3 == 0 and num % 5 == 0:
-        return num
-    elif num % 3 == 0:
-        return num
-    elif num % 5 == 0:
+    if num % 3 == 0 or num % 5 == 0:
         return num
     else:
         return 0
@@ -21,4 +17,3 @@ for n in range(1,1000):
 # Print Output
     
 print(sum)
-
