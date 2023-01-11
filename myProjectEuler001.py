@@ -7,14 +7,19 @@ def IsMultipleOfThreeOrFive(num):
         return num
     elif num % 3 == 0:
         return num
+
     elif num % 5 == 0:
         return num
     else:
         return 0
 
+#process
+    
 sum = 0
-
 for n in range(1,1000):
     sum = sum + IsMultipleOfThreeOrFive(n)
 
+#output
+    
 print(sum)
+
