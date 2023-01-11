@@ -2,7 +2,7 @@
 # The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-def IsMultipleOfThreeOrFive(num):
+def ReturnMultiple_of_3_or_5(num):
     if num % 3 == 0 and num % 5 == 0:
         return num
     elif num % 3 == 0:
@@ -12,13 +12,13 @@ def IsMultipleOfThreeOrFive(num):
     else:
         return 0
 
-#process
+# Process
     
 sum = 0
 for n in range(1,1000):
-    sum = sum + IsMultipleOfThreeOrFive(n)
+    sum = sum + ReturnMultiple_of_3_or_5(n)
 
-#output
+# Print Output
     
 print(sum)
 
