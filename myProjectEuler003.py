@@ -3,21 +3,21 @@
 
 num = 600851475143
 
-def ReturnLargestFactor(n):
+def getLargestFactor(n):
     while True:
-        p = ReturnNextSmallestFactor(n) 
+        p = getNextSmallestFactor(n) 
         if p < n:
             n = n // p      # Divides by the current smallest prime factor
         else:
             return n        # When the current smallest prime factor is the only prime factor remaining
 
-def ReturnNextSmallestFactor(n):
+def getNextSmallestFactor(n):
     for i in range(2, n):   # Begin with the smallest prime factor which is 2
         if n % i == 0:
             return i
     return n                # when n is a prime number
 
-print(ReturnLargestFactor(num))
+print(getLargestFactor(num))
 
 
 
