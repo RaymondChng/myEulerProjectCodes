@@ -14,7 +14,7 @@ def getLargestPalindrome():
                         p1 = str(new_pal)                               # Converts to a string
                         p2 = reverseStr(p1)
                         if p1 == p2 and pal < new_pal : 
-                                pal = new_pal                             # Updates variable with larger palindrone
+                                pal = new_pal                           # Updates variable with larger palindrone
 
         return pal
 
