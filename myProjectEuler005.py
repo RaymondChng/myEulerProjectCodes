@@ -5,7 +5,7 @@ num = 20
 
 def getLCM(x, y):
         if x > y:
-                x, y = y, x                  # Let y be the larger factor
+                x, y = y, x             # Let y be the larger factor
         lcm = y
         while(True):
                 if lcm % x == 0 and lcm % y ==0:
